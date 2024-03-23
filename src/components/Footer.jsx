@@ -1,5 +1,5 @@
 import styles from "../styles";
-import { logo } from "../assets";
+import { logo, copyRight } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
@@ -46,9 +46,10 @@ const Footer = () => (
 
     <div className="flex md:flex-row flex-col w-full justify-between items-center pt-6 border-t border-t-[#3F3E45]">
       <p
-        className={`font-poppins font-normal text-center text-lg leading-[27px] text-white`}
+        className={`font-poppins font-normal text-center text-lg leading-[27px] text-white flex xs:text-[16px] text-[11px]`}
       >
-        2021 HooBank. All Rights Reserved.
+        Copyright <img src={copyRight} alt="copyright" className="mx-2" /> 2021
+        HooBank. All Rights Reserved.
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">
