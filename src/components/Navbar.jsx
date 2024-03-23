@@ -13,7 +13,7 @@ const Navbar = () => {
             key={link.id}
             className={`font-poppins text-white text-[16px] cursor-pointer font-normal ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
-            }`}
+            } hover:text-secondary transition-colors ease-linear duration-300`}
           >
             <a href={`#${link.id}`} key={link.id}>
               {link.title}
